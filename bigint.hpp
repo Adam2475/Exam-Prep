@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include <algorithm>
 
 using namespace std;
 
@@ -14,6 +15,8 @@ class bigint {
         ~bigint() {};
         bigint(const bigint &src);
         bigint &operator=(const bigint &ptref);
+
+        bigint operator+(const bigint &addend) const;
     private:
 };
 
