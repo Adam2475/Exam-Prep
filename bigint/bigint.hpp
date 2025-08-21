@@ -15,7 +15,8 @@ class bigint {
         ~bigint() {};
         bigint(const bigint &src);
         bigint &operator=(const bigint &ptref);
-
+        
+        string operator+=(const bigint &addend); 
         bigint operator+(const bigint &addend) const;
     private:
 };
